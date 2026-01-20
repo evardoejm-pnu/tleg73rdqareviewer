@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLE Lecture Presentation</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: var(--text-color);
+        }
+
+        #presentation-container {
+            width: 80%;
+            max-width: 800px;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .slide {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        .section-title {
+            color: var(--accent-color);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .content {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .controls {
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--accent-color);
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .progress {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div id="presentation-container">
+    <div class="slide active">
+        <div class="section-title">I. Culinary Fundamentals</div>
+        <div class="content">Students should understand that successful cooking begins before the heat is turned on.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">I. Culinary Fundamentals</div>
+        <div class="content">Washing and measuring ingredients is the primary step to ensure efficiency.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">I. Culinary Fundamentals</div>
+        <div class="content">Following a recipe is not about restriction, but about ensuring the accuracy of the dish's flavor and the quantity produced.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">I. Culinary Fundamentals</div>
+        <div class="content">Different tools serve specific functions; for instance, a whisk is designed to incorporate air or mix dry ingredients evenly.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">I. Culinary Fundamentals</div>
+        <div class="content">Regarding health, students should be aware that steaming is a preferred cooking method because it preserves more nutrients than high-heat methods like deep-frying or prolonged boiling.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">I. Culinary Fundamentals</div>
+        <div class="content">Safe knife handling is a fundamental skill.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">I. Culinary Fundamentals</div>
+        <div class="content">One must hold the tool firmly and always cut away from the body to minimize the risk of injury.</div>
+    </div>
+
+    <div class="slide">
+        <div class="section-title">II. Garment Construction</div>
+        <div class="content">Accuracy is vital in sewing.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">II. Garment Construction</div>
+        <div class="content">Pattern drafting is a key step because it ensures the garment has a proper fit and alignment.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">II. Garment Construction</div>
+        <div class="content">For the actual cutting of fabric, specialized tools like scissors must be used to maintain precision.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">II. Garment Construction</div>
+        <div class="content">A basic step in embroidery involves securing the fabric in a hoop to keep the surface taut while working.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">II. Garment Construction</div>
+        <div class="content">Proper storage is also essential; for example, embroidery threads should be neatly rolled to prevent tangling and waste.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">II. Garment Construction</div>
+        <div class="content">Crafts are more than a hobby; they can be used to augment family income through the sale of finished household items.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">II. Garment Construction</div>
+        <div class="content">Students should be able to identify common household linens, such as pillowcases.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">II. Garment Construction</div>
+        <div class="content">When operating a sewing machine, the most important precaution is to keep fingers a safe distance from the needle to avoid accidents.</div>
+    </div>
+
+    <div class="slide">
+        <div class="section-title">III. Hospitality and Wellness</div>
+        <div class="content">Modern hospitality relies on technology to improve efficiency, such as the implementation of online booking systems.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">III. Hospitality and Wellness</div>
+        <div class="content">Providing services like hand spas is a core component of the wellness industry.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">III. Hospitality and Wellness</div>
+        <div class="content">Students should recognize standard tools, such as the nail file.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">III. Hospitality and Wellness</div>
+        <div class="content">In any beauty service, sanitation is the highest priority to prevent infections and maintain a hygienic environment for clients.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">III. Hospitality and Wellness</div>
+        <div class="content">To ensure safety and longevity, all beauty tools must be cleaned and stored properly after every use.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">III. Hospitality and Wellness</div>
+        <div class="content">This prevents accidents and protects the skin of the client.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">III. Hospitality and Wellness</div>
+        <div class="content">Staying updated on trends in beauty services allows a business to offer the specific services that customers currently want.</div>
+    </div>
+
+    <div class="slide">
+        <div class="section-title">IV. Project Management</div>
+        <div class="content">Using the correct tool for a specific job is non-negotiable because it ensures both accuracy and safety.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">IV. Project Management</div>
+        <div class="content">Students should distinguish between measuring tools (like a measuring tape) and consumables (like thread, glue, and paint) that are used up during a project.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">IV. Project Management</div>
+        <div class="content">Before starting any work, one must check equipment to avoid errors or accidents caused by malfunctioning tools.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">IV. Project Management</div>
+        <div class="content">When assembling items, following step-by-step instructions is necessary to maintain safety and functional results.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">IV. Project Management</div>
+        <div class="content">Responsible crafting involves using resources efficiently and safely to minimize waste and maximize output quality.</div>
+    </div>
+
+    <div class="slide">
+        <div class="section-title">V. Professionalism</div>
+        <div class="content">A high-quality output is achieved by following established steps, checking alignment, and finishing the work with care.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">V. Professionalism</div>
+        <div class="content">This can be supported by technology, such as using online tutorials or marketing platforms to enhance a TLE project.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">V. Professionalism - Integrity</div>
+        <div class="content">Integrity is demonstrated by using original work and providing honest calculations.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">V. Professionalism - Teamwork</div>
+        <div class="content">Teamwork involves helping others and assigning tasks fairly.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">V. Professionalism - Responsibility</div>
+        <div class="content">Responsibility is shown by completing one's assigned tasks within a group.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">V. Professionalism - Resilience</div>
+        <div class="content">Resilience is the ability to continue working even after making a mistake.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">V. Professionalism - Perseverance</div>
+        <div class="content">Perseverance is practicing a skill repeatedly until the final product is perfect.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">V. Professionalism - Time Management</div>
+        <div class="content">Effective workers allocate specific time for the planning, execution, and review of their projects.</div>
+    </div>
+    <div class="slide">
+        <div class="section-title">V. Professionalism - Reflection</div>
+        <div class="content">Periodically reflecting on one’s work is necessary to identify personal strengths and areas that need improvement.</div>
+    </div>
+
+    <div class="controls">
+        <button id="prevBtn" onclick="changeSlide(-1)" disabled>Previous</button>
+        <button id="nextBtn" onclick="changeSlide(1)">Next</button>
+    </div>
+    <div class="progress" id="progressText">Slide 1 of 36</div>
+</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const progressText = document.getElementById('progressText');
+
+    function updateProgress() {
+        progressText.innerText = `Slide ${currentSlide + 1} of ${slides.length}`;
+    }
+
+    function changeSlide(direction) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide += direction;
+
+        if (currentSlide <= 0) {
+            currentSlide = 0;
+            prevBtn.disabled = true;
+        } else {
+            prevBtn.disabled = false;
+        }
+
+        if (currentSlide >= slides.length - 1) {
+            currentSlide = slides.length - 1;
+            nextBtn.disabled = true;
+        } else {
+            nextBtn.disabled = false;
+        }
+
+        slides[currentSlide].classList.add('active');
+        updateProgress();
+    }
+</script>
+
+</body>
+</html>
